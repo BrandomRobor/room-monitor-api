@@ -1,7 +1,7 @@
 import { Schema } from "mongoose"
 import { connection } from "../helpers/connectionBuilder"
 
-export const ObjectSchema = new Schema({
+const ObjectSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -11,7 +11,7 @@ export const ObjectSchema = new Schema({
     status: Boolean
 })
 
-export const RoomSchema = new Schema({
+const RoomSchema = new Schema({
     name: {
         type: String,
         required: true
